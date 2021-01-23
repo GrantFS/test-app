@@ -1,6 +1,7 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import rootReducer from './rootReducer'
+
 import logger from 'redux-logger';
+import rootReducer from '../reducers/rootReducer';
 
 export type RootState = ReturnType<typeof store.getState>;
 
