@@ -6,7 +6,6 @@ import { TickCross } from '.';
 
 describe('TickCross', () => {
     let tick_cross: RenderResult;
-
     it("shows a loading spinner", () => {
         tick_cross = render(<TickCross value={1} loading={true}  />);
         expect(tick_cross.getByTestId('tick_cross')).toHaveClass('fa');
